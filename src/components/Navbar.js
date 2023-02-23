@@ -21,13 +21,13 @@ const Navbar = () => {
   );
   return (
     <nav className="bg-primary">
-      <div className="container mx-auto flex justify-between items-center py-4">
+      <div className="container mx-auto flex justify-between items-center py-4 px-5">
         <div>
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
         </div>
-        <div className="text-myWhite list-none flex gap-20 text-lg">
+        <div className="text-myWhite list-none flex gap-20 text-lg hidden">
           {navItems}
         </div>
         <div>
