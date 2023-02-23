@@ -2,7 +2,6 @@ import React from "react";
 import SmallBtn from "./SmallBtn";
 
 const ToolCard = ({ data }) => {
-  console.log(data);
   const { image, id, title, details, package: pack } = data;
   return (
     <div className="rounded-lg border-solid border-2 border-myBg1 shadow-md">

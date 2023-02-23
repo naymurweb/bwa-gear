@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ButtonSecondary from "../../components/ButtonSecondary";
 import ToolCard from "../../components/ToolCard";
 
 const Tools = () => {
@@ -22,6 +23,9 @@ const Tools = () => {
         {tools.map((data) => (
           <ToolCard key={data.id} data={data}></ToolCard>
         ))}
+      </div>
+      <div className="text-center">
+        <ButtonSecondary color={"bg-primaryDark"}>See All</ButtonSecondary>
       </div>
     </section>
   );

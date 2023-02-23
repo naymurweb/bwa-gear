@@ -31,7 +31,7 @@ const Navbar = () => {
           {navItems}
         </div>
         <div>
-          <ButtonSecondary>Login</ButtonSecondary>
+          <ButtonSecondary color={"bg-secondary"}>Login</ButtonSecondary>
         </div>
       </div>
     </nav>
