@@ -21,7 +21,7 @@ const Navbar = () => {
   );
   return (
     <nav className="bg-primary">
-      <div className="container mx-auto flex justify-between items-center py-4 px-5">
+      <div className="container mx-auto flex justify-between items-center py-4 px-5 md:px-0">
         <div>
           <Link to="/">
             <img src={logo} alt="" />
