@@ -1,0 +1,25 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/722w3SR/figma.png",
+      "title": "Figma",
+      "details": "Figma helps the teams to create, test, and ship better designs from start to finish.",
+      "package": "FREE"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/kmTT6gx/xd.png",
+      "title": "Adobe XD",
+      "details": "Adobe XD is your UI/UX design solution platform for website and mobile app creation.",
+      "package": "FREE"
+    },
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/bWq8WD3/invision.png",
+      "title": "InVision",
+      "details": "InVision is the digital product design platform used to make the world's best customer experiences.",
+      "package": "PREMIUM"
+    }
+  ]
+}

@@ -7,11 +7,10 @@ import user2 from "../../assets/person/user2.svg";
 const Hero = () => {
   return (
     <section className="bg-primary py-12">
-      <div className="container mx-auto flex justify-between items-center flex-col-reverse md:flex-row px-5 md:px-0">
+      <div className="container mx-auto flex justify-between items-center flex-col-reverse md:flex-row px-5">
         <div className="md:w-2/5  w-full md:text-left text-center mt-12 md:mt-0">
           <h1 className="text-myWhite md:text-5xl text-3xl font-semibold">
-            Tools for Designer,
-            <br /> Developer, and Business Owner
+            Tools for Designer, Developer, and Business Owner
           </h1>
           <p className="text-myWhite text-lg my-5">
             Information about the latest and most popular design and developer
