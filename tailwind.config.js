@@ -14,6 +14,7 @@ module.exports = {
         myYellow: "#FFC942",
         myBg1: "#F5F5F5",
         myBg2: "#E1EBFB",
+        myBg3:'#F9F9F9'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
