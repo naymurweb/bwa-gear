@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import ButtonSecondary from "./ButtonSecondary";
+import { FaBars, FaTimes, GiHamburgerMenu } from "react-icons/fa";
+
 const Navbar = () => {
+  const [mobilemenu, setMobilemenu] = useState(false);
+
   const navItems = (
     <React.Fragment>
       <li>
@@ -27,11 +31,30 @@ const Navbar = () => {
             <img src={logo} alt="" />
           </Link>
         </div>
-        <div className="text-myWhite list-none flex gap-20 text-lg hidden">
+        {/* desktop menu */}
+        <div className="text-myWhite list-none md:flex hidden gap-20 text-lg">
           {navItems}
         </div>
-        <div>
+        {/* mobile menu */}
+        <div
+          className={`text-myWhite list-none md:hidden text-lg flex flex-col gap-4 text-center absolute bg-primary transition-all duration-700 ease-in-out py-10 w-11/12  ${
+            mobilemenu ? "translate-y-52" : "translate-y-[-13rem]"
+          }`}
+        >
+          {navItems}
           <ButtonSecondary color={"bg-secondary"}>Login</ButtonSecondary>
+        </div>
+
+        <div className="hidden md:block">
+          <ButtonSecondary color={"bg-secondary"}>Login</ButtonSecondary>
+        </div>
+
+        <div className="md:hidden block text-white text-2xl">
+          {mobilemenu ? (
+            <FaTimes onClick={() => setMobilemenu(!mobilemenu)}></FaTimes>
+          ) : (
+            <FaBars onClick={() => setMobilemenu(!mobilemenu)}></FaBars>
+          )}
         </div>
       </div>
     </nav>

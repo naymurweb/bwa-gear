@@ -21,7 +21,6 @@ const Brands = () => {
         "American vacation rental online marketplace company based in San Francisco, California. Airbnb maintains and hosts a marketplace",
     },
   ];
-  console.log(brandsDoc);
   return (
     <section className="container mx-auto px-5 my-10">
       <div className="text-center">
