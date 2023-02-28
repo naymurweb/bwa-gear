@@ -5,9 +5,9 @@ import ToolCard from "../../components/ToolCard";
 const Tools = () => {
   const [tools, setTools] = useState([]);
   useEffect(() => {
-    fetch("tools.json")
+    fetch("http://localhost:9000/tools")
       .then((res) => res.json())
-      .then((data) => setTools(data.tools));
+      .then((data) => setTools(data.slice(0,3)));
   }, []);
   return (
     <section className="container mx-auto px-5 my-10">
