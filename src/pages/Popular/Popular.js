@@ -1,9 +1,10 @@
 import React from 'react';
+import HeroArea from './HeroArea';
 
 const Popular = () => {
     return (
         <div>
-            <h1>Popular  page...</h1>
+           <HeroArea></HeroArea>
             
         </div>
     );
