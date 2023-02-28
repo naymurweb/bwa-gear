@@ -20,8 +20,8 @@ const Tools = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8 my-12">
-        {tools.map((data) => (
-          <ToolCard key={data.id} data={data}></ToolCard>
+        {tools.map((data,id) => (
+          <ToolCard key={id} data={data}></ToolCard>
         ))}
       </div>
       <div className="text-center">
