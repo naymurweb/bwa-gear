@@ -3,7 +3,6 @@ import SmallBtn from "./SmallBtn";
 
 const ToolCard = ({ data }) => {
   const { image, id, title, details,packageColor, package: pack} = data;
-  console.log(data);
   return (
     <div className="rounded-lg border-solid border-2 border-myBg1 shadow-md">
       <div className="p-5">

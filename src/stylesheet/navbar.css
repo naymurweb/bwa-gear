@@ -1,0 +1,9 @@
+.active {
+    color: #FFC942;
+}
+
+li:hover {
+    color: #FFC942;
+    transition: all 0.2s ease-in;
+
+}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import ButtonSecondary from "./ButtonSecondary";
-import { FaBars, FaTimes, GiHamburgerMenu } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import '../stylesheet/navbar.css'
 
 const Navbar = () => {
   const [mobilemenu, setMobilemenu] = useState(false);
@@ -10,16 +11,16 @@ const Navbar = () => {
   const navItems = (
     <React.Fragment>
       <li>
-        <Link to="/home">HOME</Link>
+        <NavLink to="/home">HOME</NavLink>
       </li>
       <li>
-        <Link to="/popular">POPULAR</Link>
+        <NavLink to="/popular">POPULAR</NavLink>
       </li>
       <li>
-        <Link to="/new-comer">NEW COMER</Link>
+        <NavLink to="/new-comer">NEW COMER</NavLink>
       </li>
       <li>
-        <Link to="/about">ABOUT</Link>
+        <NavLink to="/about">ABOUT</NavLink>
       </li>
     </React.Fragment>
   );

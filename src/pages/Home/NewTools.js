@@ -7,25 +7,26 @@ const NewTools = () => {
   useEffect(() => {
     fetch("http://localhost:9000/newtools")
       .then((res) => res.json())
-      .then((data) => setTool(data.slice(0,4)));
+      .then((data) => setTool(data.slice(0, 4)));
   }, []);
-  console.log(tool);
   return (
-    <section className="container mx-auto px-5 my-10 bg-myBg3 py-12">
-      <div className="text-center">
-        <h2 className="text-4xl font-semibold my-4 text-primaryDark">
-          New Comer Tools
-        </h2>
-        <p className="text-lg">New tools gains popularity</p>
-      </div>
+    <section className="  my-20 bg-myBg3 py-12">
+      <div className="container mx-auto px-5">
+        <div className="text-center">
+          <h2 className="text-4xl font-semibold my-4 text-primaryDark">
+            New Comer Tools
+          </h2>
+          <p className="text-lg">New tools gains popularity</p>
+        </div>
 
-      <div className="grid md:grid-cols-2 gap-12 my-12">
-        {tool.map((data, id) => (
-          <ToolCard2 key={id} data={data}></ToolCard2>
-        ))}
-      </div>
-      <div className="text-center">
-        <ButtonSecondary color={"bg-primaryDark"}>See All</ButtonSecondary>
+        <div className="grid md:grid-cols-2 gap-12 my-12">
+          {tool.map((data, id) => (
+            <ToolCard2 key={id} data={data}></ToolCard2>
+          ))}
+        </div>
+        <div className="text-center">
+          <ButtonSecondary color={"bg-primaryDark"}>See All</ButtonSecondary>
+        </div>
       </div>
     </section>
   );

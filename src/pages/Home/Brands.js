@@ -22,7 +22,7 @@ const Brands = () => {
     },
   ];
   return (
-    <section className="container mx-auto px-5 my-10">
+    <section className="container mx-auto px-5 my-12 py-12">
       <div className="text-center">
         <h2 className="text-4xl font-semibold my-4 text-primaryDark">
           Trusted by Brands
@@ -30,7 +30,7 @@ const Brands = () => {
         <p className="text-lg">Brand that using the tools</p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 my-8">
+      <div className="grid md:grid-cols-3 gap-8 my-12">
         {brandsDoc.map((data, id) => (
           <div key={id} className="">
             <div className="flex justify-center my-5">

@@ -10,7 +10,7 @@ const Tools = () => {
       .then((data) => setTools(data.slice(0,3)));
   }, []);
   return (
-    <section className="container mx-auto px-5 my-10">
+    <section className="container mx-auto px-5 my-20 py-12">
       <div className="text-center">
         <h2 className="text-4xl font-semibold my-4 text-primaryDark ">
           Most Popular Tools

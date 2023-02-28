@@ -23,7 +23,7 @@ const Categories = () => {
   ];
 
   return (
-    <section className="container mx-auto my-10 px-5">
+    <section className="container mx-auto my-20 px-5">
       <div className="grid md:grid-cols-3 gap-8 text-center">
         {categoriesInfo.map((data, id) => (
           <div className="py-5 px-10" key={id}>
