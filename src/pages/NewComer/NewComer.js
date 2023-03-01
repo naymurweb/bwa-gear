@@ -1,9 +1,13 @@
 import React from 'react';
+import ComerHero from './ComerHero';
+import ComerTools from './ComerTools';
 
 const NewComer = () => {
     return (
         <div>
-            <h1>NewComer</h1>
+            <ComerHero></ComerHero>
+            <ComerTools></ComerTools>
+        
         </div>
     );
 };
