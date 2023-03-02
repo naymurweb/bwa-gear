@@ -17,9 +17,11 @@ const ToolCard2 = ({ data }) => {
                 {title}
               </h3>
               <h4
-                className={`${
-                  color === "primary" && "text-secondary"
-                } font-medium text-lg`}
+                  className={`${
+                    (color === "primary" && "text-secondary") ||
+                    (color === "myYellow" && "text-myYellow") ||
+                    (color === "myGreen" && "text-myGreen")
+                  } font-medium text-lg`}
               >
                 {pack}
               </h4>

@@ -5,15 +5,23 @@ import "../../stylesheet/pagination.css";
 const ComerTools = () => {
   const [tool, setTool] = useState([]);
   const [page, setPage] = useState(0);
-  // pagination
-  const count = tool.length;
-  const parPage = 6;
-  const pages = Math.ceil(count / parPage);
+  const [totalTools, setTotalTools] = useState(0);
+
   useEffect(() => {
-    fetch(`http://localhost:9000/newtools`)
+    fetch(`http://localhost:9000/tools?_page=${page}&_limit=${parPage}`)
       .then((res) => res.json())
       .then((data) => setTool(data));
-  }, [pages]);
+  }, [page]);
+
+  useEffect(() => {
+    fetch(`http://localhost:9000/tools`)
+      .then((res) => res.json())
+      .then((data) => setTotalTools(data?.length));
+  }, [page]);
+
+  // pagination
+  const parPage = 10;
+  const pages = Math.ceil(totalTools / parPage);
 
   return (
     <section className="container mx-auto px-5 my-12">
@@ -25,7 +33,9 @@ const ComerTools = () => {
       <div className="text-center my-12">
         {[...Array(pages).keys()].map((number) => (
           <button
-            className={`btn bg-green-400 mx-2 ${page === number && "selected"}`}
+            className={`btn border px-5 py-2 mx-1 text-xl font-medium rounded-sm ${
+              page === number && "selected"
+            }`}
             onClick={() => setPage(number)}
             key={number}
           >

@@ -3,6 +3,7 @@ import hero from "../../assets/hero.svg";
 import ButtonPrimary from "../../components/ButtonPrimary";
 import user1 from "../../assets/person/user.svg";
 import user2 from "../../assets/person/user2.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,7 +17,9 @@ const Hero = () => {
             Information about the latest and most popular design and developer
             tools around the world.
           </p>
+          <Link to='/about'>
           <ButtonPrimary>Explore now</ButtonPrimary>
+          </Link>
           <div className="my-12 flex items-center md:justify-start justify-center">
             <div className="w-10 flex ">
               <img src={user1} alt="" />

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ButtonSecondary from "../../components/ButtonSecondary";
 import ToolCard2 from "../../components/ToolCard2";
 
@@ -25,7 +26,9 @@ const NewTools = () => {
           ))}
         </div>
         <div className="text-center">
-          <ButtonSecondary color={"bg-primaryDark"}>See All</ButtonSecondary>
+          <Link to="/new-comer">
+            <ButtonSecondary color={"bg-primaryDark"}>See All</ButtonSecondary>
+          </Link>
         </div>
       </div>
     </section>
