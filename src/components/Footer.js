@@ -13,11 +13,11 @@ const Footer = () => {
         <p className="text-lg text-white">
           Subscribe to get exclusive news & offer
         </p>
-        <div className="flex justify-center gap-2 m-8">
+        <div className="md:flex justify-center gap-2  md:m-8">
           <input
             type="text"
             placeholder="Email address"
-            className="p-2 w-72 rounded-md"
+            className="p-2 w-72 rounded-md md:my-0 my-4"
           />
           <ButtonPrimary>Subscribe</ButtonPrimary>
         </div>
@@ -54,17 +54,16 @@ const Footer = () => {
             </div>
             <div className="text-white">
               <h3 className="text-xl font-medium my-2">Legal Stuff</h3>
-              <p>About Us</p>
-              <p>Blog</p>
-              <p> Contact</p>
-              <p>FAQ</p>
+              <p>Disclaimer</p>
+              <p>Financing</p>
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
             </div>
             <div className="text-white">
               <h3 className="text-xl font-medium my-2">Office</h3>
-              <p>About Us</p>
-              <p>Blog</p>
-              <p> Contact</p>
-              <p>FAQ</p>
+              <p>gear@gmail.com</p>
+              <p>Jln. Soekarno Hatta No 1A</p>
+              <p>Jakarta, Indonesia</p>
             </div>
           </div>
         </div>
