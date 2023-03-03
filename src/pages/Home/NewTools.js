@@ -6,7 +6,7 @@ import ToolCard2 from "../../components/ToolCard2";
 const NewTools = () => {
   const [tool, setTool] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:9000/newtools")
+    fetch("https://bwa-gear.onrender.com/newtools")
       .then((res) => res.json())
       .then((data) => setTool(data.slice(0, 4)));
   }, []);

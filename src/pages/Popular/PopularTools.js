@@ -8,12 +8,12 @@ const PopularTools = () => {
   const [totalTools, setTotalTools] = useState(0);
 
   useEffect(() => {
-    fetch(`http://localhost:9000/tools?_page=${page}&_limit=${parPage}`)
+    fetch(`https://bwa-gear.onrender.com/tools?_page=${page}&_limit=${parPage}`)
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, [page]);
   useEffect(() => {
-    fetch("http://localhost:9000/tools")
+    fetch("https://bwa-gear.onrender.com/tools")
       .then((res) => res.json())
       .then((data) => setTotalTools(data?.length));
   }, []);
